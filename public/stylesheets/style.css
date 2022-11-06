@@ -1,0 +1,31 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#container {
+  display: flex;
+  height: 700px;
+  boder: 1px solid black;
+}
+
+.child {
+  width: 200px;
+  hieght: 200px;
+}
+
+#child1{
+  background: blue;
+}
+
+#child2{
+  background: red;
+}
+
+#child3{
+  background: green;
+}
