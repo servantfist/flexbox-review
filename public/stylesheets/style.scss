@@ -1,0 +1,158 @@
+/* Style the tab */
+body {
+    margin: 100px;
+}
+
+.container {
+    h1 {
+        background-color: aquamarine;
+    }
+
+    .tab {
+        overflow: hidden;
+    }
+
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid black;
+        border-top: none;
+    }
+
+    table,
+    th,
+    td {
+        width: 25%;
+        border: 1px solid black;
+    }
+
+    button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+    button:hover {
+        background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    button.active {
+        background-color: #ccc;
+    }
+
+    @-webkit-keyframes fadeEffect {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeEffect {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    #RowCentered {
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+
+        .child {
+            width: 200px;
+            height: 200px;
+        }
+
+        #child1 {
+            background: blue;
+        }
+
+        #child2 {
+            background: red;
+        }
+
+        #child3 {
+            background: green;
+        }
+    }
+
+    #RowCentered {
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+
+        .child {
+            width: 200px;
+            height: 200px;
+        }
+
+        #child1 {
+            background: blue;
+        }
+
+        #child2 {
+            background: red;
+        }
+
+        #child3 {
+            background: green;
+        }
+    }
+
+    #ColumnBasic {
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+
+        .child {
+            width: 200px;
+            height: 200px;
+        }
+
+        #child1 {
+            background: blue;
+        }
+
+        #child2 {
+            background: red;
+        }
+
+        #child3 {
+            background: green;
+        }
+    }
+
+    #ColumnCentered {
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+
+        .child {
+            width: 200px;
+            height: 200px;
+        }
+
+        #child1 {
+            background: blue;
+        }
+
+        #child2 {
+            background: red;
+        }
+
+        #child3 {
+            background: green;
+        }
+    }
+}

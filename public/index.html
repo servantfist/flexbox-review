@@ -1,19 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-  <title>Flexbox Review</title>
-</head>
-<body>
-    <h1>Flexbox review</h1>
-  <section id="container">
-    <div class="child" id="child1">blue</div>
-    <div class="child" id="child3">red</div>
-    <div class="child" id="child2">green</div>
-  </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"
+        />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/stylesheets/style.scss" />
+        <title>Flexbox Review</title>
+    </head>
 
-</body>
+    <body>
+        <div class="container">
+            <h1>Flexbox Review</h1>
+            <div class="tab">
+                <button
+                    class="tablinks"
+                    onclick="openStyle(event, 'RowBasic')"
+                    id="defaultOpen"
+                ></button>
+                <button
+                    class="tablinks"
+                    onclick="openStyle(event, 'RowCenter')"
+                ></button>
+                <button
+                    class="tablinks"
+                    onclick="openStyle(event, 'ColumnBasic')"
+                ></button>
+                <button
+                    class="tablinks"
+                    onclick="openStyle(event, 'ColumnCenter')"
+                ></button>
+            </div>
+            <table>
+                <th>Child</th>
+                <th>Color</th>
+                <tr>
+                    <td>child 1</td>
+                    <td>blue</td>
+                </tr>
+                <tr>
+                    <td>child 2</td>
+                    <td>red</td>
+                </tr>
+                <tr>
+                    <td>child 3</td>
+                    <td>green</td>
+                </tr>
+            </table>
+            <article>
+                <div id="RowBasic" class="tabcontent">
+                    <h3>RowBasic</h3>
+                    <div class="child" id="child1">blue</div>
+                    <div class="child" id="child3">red</div>
+                    <div class="child" id="child2">green</div>
+                </div>
+                <div id="RowCenter" class="tabcontent">
+                    <h3>RowCenter</h3>
+                    <div class="child" id="child1">blue</div>
+                    <div class="child" id="child3">red</div>
+                    <div class="child" id="child2">green</div>
+                </div>
+                <div id="ColumnBasic" class="tabcontent">
+                    <h3>ColumnBasic</h3>
+                    <div class="child" id="child1">blue</div>
+                    <div class="child" id="child3">red</div>
+                    <div class="child" id="child2">green</div>
+                </div>
+                <div id="ColumnCenter" class="tabcontent">
+                    <h3>ColumnBasic</h3>
+                    <div class="child" id="child1">blue</div>
+                    <div class="child" id="child3">red</div>
+                    <div class="child" id="child2">green</div>
+                </div>
+            </article>
+        </div>
+        <script src="./javascripts/index.js"></script>
+    </body>
 </html>
